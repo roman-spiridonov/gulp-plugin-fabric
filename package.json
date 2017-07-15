@@ -1,0 +1,35 @@
+{
+  "name": "gulp-plugin-fabric",
+  "version": "0.1.0",
+  "description": "Generate gulp plugin from a class or function",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "eslint": "eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roman-spiridonov/gulp-plugin-fabric.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Roman Spiridonov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roman-spiridonov/gulp-plugin-fabric/issues"
+  },
+  "homepage": "https://github.com/roman-spiridonov/gulp-plugin-fabric#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "fs-extra": "^4.0.0",
+    "gulp": "^3.9.1",
+    "mocha": "^3.4.2",
+    "path": "^0.12.7",
+    "sinon": "^2.3.8"
+  }
+}
