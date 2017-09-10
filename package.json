@@ -1,6 +1,6 @@
 {
   "name": "gulp-plugin-fabric",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate gulp plugin from a class or function",
   "main": "index.js",
   "scripts": {

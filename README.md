@@ -10,13 +10,14 @@ The following types of functions are supported:
 1. Sync: `run(data, options)` returns resulting string, or throws an error
 2. Async: `run(data, options, cb)` calls `cb(null, result)` upon successful completion, or `cb(err)` in case of an error
 
-In all cases, if `init` is provided, then `options` argument should be omitted, i.e. use `run(data)` instead of `run(data, options)`.
-
 # Examples
+Let's create a simple gulp plugin that adds a custom suffix to the input string. 
+For example, suffix "!" would result in "str" -> "str!" transformation. 
+
 Convert function to gulp plugin: 
 ```javascript
 let run = (text, options) => text + options.suffix;
-let plugin = require('gulpPluginFabric')("my-plugin", run);
+let plugin = require('gulp-plugin-fabric')("my-plugin", run);
 ```
 
 Convert object to gulp plugin:
@@ -31,7 +32,7 @@ let runner = {
   }
 };
 
-let plugin = require('gulpPluginFabric')("my-plugin", runner.run.bind(runner), runner.init.bind(runner));
+let plugin = require('gulp-plugin-fabric')("my-plugin", runner.run.bind(runner), runner.init.bind(runner));
 ```
 
 Then you can use plugin in gulp as follows:

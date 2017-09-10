@@ -60,11 +60,7 @@ module.exports = function (name, onRun, onInit) {
           };
 
           try {
-            if (onInit) {
-              res = onRun(fileStr, cb);
-            } else {
-              res = onRun(fileStr, options, cb)
-            }
+            res = onRun(fileStr, options, cb);
           } catch (err) {
             reject(err);
           }
@@ -76,5 +72,4 @@ module.exports = function (name, onRun, onInit) {
     });
 
   };
-
 };

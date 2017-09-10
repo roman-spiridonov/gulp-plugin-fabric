@@ -70,7 +70,7 @@ describe("gulpPluginFabric", function () {
       callsFunc: 0,
       callsInit: 0,
       _name: "test",
-      func: function (text, cb) {
+      func: function (text, options, cb) {
         ++this.callsFunc;
         setTimeout(cb(null, text + this._suffix), 0);
       },
