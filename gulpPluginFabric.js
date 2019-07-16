@@ -5,8 +5,7 @@
 
 const
   through = require('through2'),
-  gutil = require('gulp-util'),
-  PluginError = gutil.PluginError;
+  PluginError = require('plugin-error');
 
 /**
  * Fabric that creates a gulp plug-in for a specified Converter class.
